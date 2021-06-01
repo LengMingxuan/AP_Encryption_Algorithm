@@ -28,7 +28,7 @@ def decode(s):
 def encrypt(key, s):
     s = encode(s)
     b = bytearray(str(s).encode("gbk"))
-    n = len(b) # 姹傚嚭 b 鐨勫瓧鑺傛暟
+    n = len(b) # 求出 b 的字节数
     c = bytearray(n*2)
     j = 0
     for i in range(0, n):
@@ -37,7 +37,7 @@ def encrypt(key, s):
         c1 = b2 % 16
         c2 = b2 // 16 # b2 = c2*16 + c1
         c1 = c1 + 65
-        c2 = c2 + 65 # c1,c2閮芥槸0~15涔嬮棿鐨勬暟,鍔犱笂65灏卞彉鎴愪簡A-P 鐨勫瓧绗︾殑缂栫爜
+        c2 = c2 + 65 # c1,c2都是0~15之间的数,加上65就变成了A-P 的字符的编码
         c[j] = c1
         c[j+1] = c2
         j = j+2
@@ -45,7 +45,7 @@ def encrypt(key, s):
 
 def decrypt(key, s):
     c = bytearray(str(s).encode("gbk"))
-    n = len(c) # 璁＄畻 b 鐨勫瓧鑺傛暟
+    n = len(c) # 计算 b 的字节数
     if n % 2 != 0 :
         return ""
     n = n // 2
