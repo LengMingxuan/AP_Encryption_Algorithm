@@ -24,3 +24,9 @@ AP加密算法
 3. 安全性
 
 &nbsp;&nbsp;&nbsp;&nbsp;此算法的安全性在于进行了双重加密，在不考虑源码泄露的情形外，较难通过暴力破解得到k、N的值。
+
+## License
+![GitHub](https://img.shields.io/github/license/LengMingxuan/AP_Encryption_Algorithm)
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg"></a>
+
+本项目遵循`MIT license`，方便交流与学习，包括但不限于本项目的衍生品都禁止在损害他人利益情况下进行盈利。如果您发现本项目有侵犯您的知识产权，请与我取得联系，我会及时修改或删除。
