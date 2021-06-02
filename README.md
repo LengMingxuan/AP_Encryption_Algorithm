@@ -28,7 +28,8 @@ python main.py -d -s ABCD
 2. 加解密
 
 ![](http://www.lengmingxuan.cn/wp-content/uploads/2021/06/ap.png)
-
+**算法过程图解**
+![](http://www.lengmingxuan.cn/wp-content/uploads/2021/06/apways.png)
 3. 安全性
 
 &nbsp;&nbsp;&nbsp;&nbsp;此算法的安全性在于进行了双重加密，在不考虑源码泄露的情形外，较难通过暴力破解得到k、N的值。
